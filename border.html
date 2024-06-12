@@ -11,9 +11,20 @@
     </style>
 </head>
 <body class="bg-gradient-to-r from-slate-900 to-slate-700">
-    <div class="h-screen flex justify-center items-center">
+    <div class="h-12 w-96 mx-auto my-8 rounded-xl flex justify-center items-center bg-blue-500/20">
+        <ul class="flex gap-x-12 text-white">
+            <li class="hover:underline"><a href="index.html">Inicio</a></li>
+            <li class="font-bold hover:underline text-indigo-400"><a href="">Border</a></li>
+            <li class="hover:underline"><a href="">Stikers</a></li>
+            <li class="hover:underline"><a href="">Password</a></li>
+        </ul>
+    </div>
 
-        <img id="imagen" class="border-2 rounded-md border-red-500 size-96" onclick="cambiarColor()" src="https://cdnx.jumpseller.com/juegos-mil/image/44536559/02.png?1705470617" alt="">
+    <div class="flex flex-col justify-center items-center">
+        <div class="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent text-2xl">
+            Dale un click!
+        </div>
+        <img id="imagen" class="border-2 rounded-md border-red-500 size-48 transition-all active:rotate-45 duration-100 cursor-pointer" onclick="cambiarColor()" src="https://cdnx.jumpseller.com/juegos-mil/image/44536559/02.png?1705470617" alt="">
     </div>
 <script src="./assets/js/border.js"></script>
 </body>
