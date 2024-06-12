@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-slate-900 to-slate-700">
+    <div class="h-12 w-96 mx-auto my-8 rounded-xl flex justify-center items-center bg-blue-500/20">
+        <ul class="flex gap-x-12 text-white">
+            <li class="hover:underline"><a href="index.html">Inicio</a></li>
+            <li class="hover:underline"><a href="border.html">Border</a></li>
+            <li class="font-bold text-indigo-400 hover:underline"><a href="stickers.html">Stickers</a></li>
+            <li class="hover:underline"><a href="password.html">Password</a></li>
+        </ul>
+    </div>
+    <div class="flex flex-col justify-center items-center">
+        <div class="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent text-2xl">
+            Stickers
+        </div>
+
+        <div class="flex flex-row gap-x-12 my-8">
+            <div>
+                <img class="rounded-full size-48" src="./assets/imgs/sticker01.jpg"
+                    alt="Sticker Hunter X Hunter Killua">
+                <input class="my-2 rounded-md text-right" type="number" name="sticker" value="0" onchange="contar()"
+                    id="sticker01" min="0" pattern="^[0-9]+">
+            </div>
+
+            <div>
+                <img class="rounded-full size-48" src="./assets/imgs/sticker02.jpg"
+                    alt="Sticker Hunter X Hunter Hisoka">
+                <input class="my-2 rounded-md text-right" type="number" name="sticker" value="0" onchange="contar()"
+                    id="sticker02" min="0" pattern="^[0-9]+">
+            </div>
+
+
+            <div>
+                <img class="rounded-full size-48" src="./assets/imgs/sticker03.jpg" alt="Sticker Hunter X Hunter Gon">
+                <input class="my-2 rounded-md text-right" type="number" name="sticker" value="0" onchange="contar()"
+                    id="sticker03" min="0" pattern="^[0-9]+">
+            </div>
+        </div>
+        <p class="text-white grid justify-items-center" id="mensaje">Llevas: 0 stickers</p>
+    </div>
+    <script src="./assets/js/stickers.js">
+
+    </script>
+</body>
+
+</html>
